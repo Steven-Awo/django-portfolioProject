@@ -1,1 +1,835 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <!-- Load static files -->
+    {% load static %}
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/skins/color-1.css">
+    
+    <!-- Style SWitcher -->
+    <link rel="stylesheet" href="{% static 'css/skins/color-1.css' %}" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="{% static 'css/skins/color-2.css' %}" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="{% static 'css/skins/color-3.css' %}" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="{% static 'css/skins/color-4.css' %}" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="{% static 'css/skins/color-5.css' %}" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="{% static 'css/style-switcher.css' %}">
+    <link rel="stylesheet" href="{% static 'css/skins/color-6.css' %}" class="alternate-style" title="color-6" disabled>
+
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- Include Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <!-- Include Lightbox2 JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+</head>
+<body>
+    <!-- MAIN START -->
+    <main class="main-container">
+        <!-- ASIDE START -->
+        <aside class="aside">
+            <div class="logo">
+                <a href="#"><span>D</span>ark<span>9</span>ite</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="nav-link"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about" class="nav-link"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#service" class="nav-link"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio" class="nav-link"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+        </aside>
+        <!-- ASIDE END -->
+
+        <!-- MAIN CONTENT START -->
+        <div class="main-content">
+            <!-- HOME SECTION START --> 
+            <section id="home" id=""class="home section">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hello, my name is <span class="name">Rotimi Olakunle Oluwadurotimi Awomodu</span></h3>
+                            <h3 class="my-profession">I'm an <span class="typing">AI Software Engineer</span></h3>
+                            <p>
+                                I'm a Developer with extensive experience in
+                                Software Engineering, Python, AI, Networking and
+                                Cybersecurity for over 2+ years.
+                                My expertise are in Python, Java, C++, Djanjo,
+                                Machine Learning, Data Structure, Network Security, SIEM, Resful API, Dev Ops and more.
+                            </p>
+                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                        </div>
+
+                        <div class="home-img padd-15">
+                            <img src="{% static 'images/profilepic1.jpg' %}" alt="profile-picture">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- HOME SECTION END -->
+
+            <!-- ABOUT SECTION START -->
+            <section id="about" class="about section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>I'm Rotimi Olakunle Oluwadurotimi Awomodu and an <span>AI Software Engineer</span></h3>
+                                    <p>
+                                        As an AI Software Engineer with over 2 years of experience,  specializing in developing scalable and efficient applications. My expertise spans a variety of technologies, including Python, Django, Angular, React, NestJS, Node.js, MySQL, and MongoDB. I am adept in AI libraries such as Pandas, TensorFlow, and OpenCV, which I use to build advanced machine learning models and computer vision solutions. My background includes creating distributed systems with Django, optimizing RESTful APIs, and integrating front-end elements with back-end systems. I have developed real-time applications like sentiment analysis systems, handwritten digit recognition models, and gesture recognition systems. Additionally, I possess strong soft skills in problem-solving, teamwork, and communication, which enhance my ability to collaborate effectively with cross-functional teams. My experience is complemented by certifications in software engineering, AI development, and network security, demonstrating my commitment to continuous learning and technological innovation.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Birthday: <span>March 1998</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Age: <span>26</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <a href="https://github.com/Steven-Awo"><p>Website: <span>github.com/Steven-Awo</span></p></a>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Emails: <span>rotimiawomodu@gmail.com, </span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Degree: <span>BSC in Computer Science</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Phone: <span>+234 81 17 03 33 82</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>City: <span>Abuja</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Freelance: <span>Available</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="{% static 'images/CV/Python-Developer1.pdf' %}" class="btn" download>Download CV</a>
+                                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">
+                                            <h5 class="timeline-title">PYTHON</h5 class="timeline-title">
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 85%;"></div>
+                                                <div class="skill-percent">85%</div>
+                                            </div>
+                                        </div><div class="skill-item padd-15">
+                                            <h5 class="timeline-title">JAVA</h5 class="timeline-title">
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 85%;"></div>
+                                                <div class="skill-percent">85%</div>
+                                            </div>
+                                        </div><div class="skill-item padd-15">
+                                            <h5 class="timeline-title">C/C++</h5 class="timeline-title">
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 60%;"></div>
+                                                <div class="skill-percent">60%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5 class="timeline-title">DJANGO</h5 class="timeline-title">
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 75%;"></div>
+                                                <div class="skill-percent">75%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5 class="timeline-title">PANDAS</h5 class="timeline-title">
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 80%;"></div>
+                                                <div class="skill-percent">80%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5 class="timeline-title">OPEN-CV</h5 class="timeline-title">
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 80%;"></div>
+                                                <div class="skill-percent">80%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5 class="timeline-title">ANGULAR</h5 class="timeline-title">
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 65%;"></div>
+                                                <div class="skill-percent">65%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5 class="timeline-title">CYBERSECURITY</h5 class="timeline-title">
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 70%;"></div>
+                                                <div class="skill-percent">70%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5 class="timeline-title">NETWORKING</h5 class="timeline-title">
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 70%;"></div>
+                                                <div class="skill-percent">70%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5 class="timeline-title">HTML</h5 class="timeline-title">
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 85%;"></div>
+                                                <div class="skill-percent">85%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5 class="timeline-title">CSS</h5 class="timeline-title">
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 60%;"></div>
+                                                <div class="skill-percent">60%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5 class="timeline-title">JS</h5 class="timeline-title">
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 50%;"></div>
+                                                <div class="skill-percent">50%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5 class="timeline-title">React</h5 class="timeline-title">
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 45%;"></div>
+                                                <div class="skill-percent">45%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5 class="timeline-title">SQL</h5 class="timeline-title">
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 55%;"></div>
+                                                <div class="skill-percent">55%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- timeline item -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2020 - 2022
+                                                    </h3>
+                                                    <h4 class="timeline-title">Baze University</h4>
+                                                    <p class="timeline-text">
+                                                        Studied
+                                                    </p>
+                                                    <h5 class="timeline-title">Computer Science</h5 class="timeline-title">
+                                                    <p class="timeline-text">
+                                                        Studied Computer Science at university, focusing on programming, algorithms, data structures, and software development. Developed a strong foundation in computational theory, database management, and artificial intelligence. Engaged in practical projects, coding exercises, and collaborative software development, enhancing skills in problem-solving, software engineering, and system design, preparing for a career in technology and software development.
+                                                    </p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2015 - 2017
+                                                    </h3>
+                                                    <h4 class="timeline-title">Covernant University</h4>
+                                                    <p class="timeline-text">
+                                                        Studied
+                                                    </p>
+                                                    <h5 class="timeline-title">Information Communication Engineering</h5 class="timeline-title">
+                                                    <p class="timeline-text">
+                                                        Studied Information Communication Engineering at university, focusing on networking, telecommunications, and digital systems. Developed expertise in programming, network design, and cybersecurity. Gained hands-on experience with hardware and software integration, signal processing, and data communication protocols. Engaged in projects and labs, enhancing problem-solving skills and knowledge of modern communication technologies, laying a solid foundation for a career in technology and engineering.
+                                                    </p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2009 - 2015
+                                                    </h3>
+                                                    <h4 class="timeline-title">Ensence International School</h4>
+                                                    <p class="timeline-text">
+                                                        Studied
+                                                    </p>
+                                                    <h5 class="timeline-title">Science</h5 class="timeline-title">
+                                                    <p class="timeline-text">
+                                                        Studied core science subjects, including Physics, Chemistry, Biology, and Mathematics, building a strong foundation in analytical thinking and problem-solving. Gained practical laboratory skills, understanding scientific principles and methodologies. Developed a passion for technology, computing, and innovation through hands-on experiments and collaborative projects, laying the groundwork for a future in software engineering, AI, and robotics.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- timeline item -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2023 - 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">Software Engineering</h4>
+                                                    <h5 class="timeline-title">At ALX-Africa</h5 class="timeline-title">
+                                                    <p class="timeline-text">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolor dignissimos voluptatum odio repellat numquam veniam minus! Neque, possimus eos! Unde incidunt inventore consequuntur maiores.
+                                                    </p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">Artificial Intelligence Developer Intern</h4>
+                                                    <h5 class="timeline-title">At CodeClause</h5 class="timeline-title">
+                                                    <p class="timeline-text">
+                                                        Developed an NLP-based sentiment analysis system using Python, Pandas, and NLTK to extract insights from large datasets. Built a handwritten digit recognition system with TensorFlow and OpenCV, achieving real-time predictions through Docker deployment. Created a real-time gesture recognition system using Python, OpenCV, and MediaPipe, enabling multimedia control through custom algorithms and hand gestures, enhancing skills in machine learning, computer vision, and AI deployment.
+                                                    </p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2011
+                                                    </h3>
+                                                    <h4 class="timeline-title">Artificial Intelligence & Robotic Engineer</h4>
+                                                    <h5 class="timeline-title">At National Center for Airtificial Intelligence & Robotics(NCAIR)</h5 class="timeline-title">
+                                                    <p class="timeline-text">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolor dignissimos voluptatum odio repellat numquam veniam minus! Neque, possimus eos! Unde incidunt inventore consequuntur maiores.
+                                                    </p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Network Engineer</h4>
+                                                    <h5 class="timeline-title">At National Defense College(NDC)</h5 class="timeline-title">
+                                                    <p class="timeline-text">
+                                                        Provided technical support, resolving hardware, software, and network challenges. Improved LAN/WAN uptime by 30%, collaborated on BGP misconfiguration, and enhanced departmental troubleshooting. Delivered user training and maintained system configurations. Supported Cisco Layer 2 switches and various routers, ensuring seamless network connectivity and performance optimization.
+                                                    </p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title"> Cisco Certified Networking Associate and Cisco Certified CyberOps Associate Intern</h4>
+                                                    <h5 class="timeline-title">At Afrihub ICT Institute</h5 class="timeline-title">
+                                                    <p class="timeline-text">
+                                                        Configured secure wireless networks for small businesses, ensuring data confidentiality, integrity, and availability (CIA). Monitored network traffic using specialized tools to maintain CIA standards. Demonstrated quick learning by achieving Cisco Certified CyberOps Associate certification, showcasing strong networking and cybersecurity skills.
+                                                    </p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2016
+                                                    </h3>
+                                                    <h4 class="timeline-title">IT Support Intern</h4>
+                                                    <h5 class="timeline-title">At Air Force Institute of Tectnology(AFIT)</h5 class="timeline-title">
+                                                    <p class="timeline-text">
+                                                        Performed troubleshooting and system analysis, improving company performance by resolving hardware issues and enhancing network infrastructure. Assisted in setting up and maintaining computer systems, leading to a 20% productivity boost. Contributed to technical documentation and collaborated on process improvements with the IT team.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ABOUT SECTION END -->
+
+            <!-- SERVICE SECTION START -->
+            <section id="service" class="service section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Service item start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Software Developer</h4>
+                                <p>
+                                    Delivering innovative and high-performance software solutions tailored to your needs, leveraging cutting-edge technologies and best practices.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service item end -->
+                        <!-- Service item start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-robot"></i>
+                                </div>
+                                <h4>AI Developer</h4>
+                                <p>
+                                    Creating advanced AI-driven applications and models that transform data into actionable insights and drive intelligent decision-making.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service item end -->
+                        <!-- Service item start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>Python Developer</h4>
+                                <p>
+                                    Developing robust and scalable Python applications with a focus on efficiency, maintainability, and leveraging top frameworks and libraries.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service item end -->
+                        <!-- Service item start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-globe"></i>
+                                </div>
+                                <h4>Web Developer</h4>
+                                <p>
+                                    Building dynamic and user-centric web solutions with expertise in modern frameworks and seamless integration of front-end and back-end technologies.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service item end -->
+                        <!-- Service item start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-network-wired"></i>
+                                </div>
+                                <h4>Network Engineer</h4>
+                                <p>
+                                    Designing and optimizing secure and efficient network infrastructures to ensure seamless connectivity and high performance for your organization.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service item end -->
+                        <!-- Service item start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-shield-alt"></i>
+                                </div>
+                                <h4>Cybersecurity</h4>
+                                <p>
+                                    Implementing cutting-edge cybersecurity measures to protect your systems from threats and ensure the integrity, confidentiality, and availability of your data.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service item end -->
+                    </div>
+                </div>
+            </section>
+            <!-- SERVICE SECTION END -->
+
+            <!-- PORTFOLIO SECTION START -->
+            <section id="portfolio" class="portfolio section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="portfolio-heading">
+                            <h2>My latest projects:</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- portfolio item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="./images/portfolio/portfolio-1.jpg" data-lightbox="portfolio-gallery" data-title="Portfolio 1">
+                                        <img src="./images/portfolio/portfolio-1.jpg" alt="portfolio-1">
+                                        <h4>E-Commerce website</h4>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item end -->
+
+                        <!-- portfolio item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="./images/portfolio/portfolio-2.jpg" data-lightbox="portfolio-gallery" data-title="Portfolio 2">
+                                        <img src="./images/portfolio/portfolio-2.jpg" alt="portfolio-2">
+                                        <h4>AI Movie Reommendation Website</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item end -->
+
+                        <!-- Portfolio item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="./images/portfolio/portfolio-3.jpg" data-lightbox="portfolio" data-title="Project 3">
+                                        <img src="./images/portfolio/portfolio-3.jpg" alt="portfolio-3">
+                                        <h4>Gesture Recognition System</h4>
+                                        <a href="https://www.linkedin.com/posts/rotimi-awomodu-b0b7b5a1_exciting-update-completed-gesture-recognition-activity-7168785559358799872-OWEy?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">Video post link</a>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item end -->
+
+                        <!-- Portfolio item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="./images/portfolio/portfolio-4.jpg" data-lightbox="portfolio" data-title="Project 4">
+                                        <img src="./images/portfolio/portfolio-4.jpg" alt="portfolio-4">
+                                        <h4>Sentiment Analysis System</h4>
+                                        <a href="https://www.linkedin.com/posts/rotimi-awomodu-b0b7b5a1_sentimentanalysis-nlp-python-activity-7168788022354767872-mcMU?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">Video post link</a>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item end -->
+
+                        <!-- Portfolio item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="./images/portfolio/portfolio-5.jpg" data-lightbox="portfolio" data-title="Project 5">
+                                        <img src="./images/portfolio/portfolio-5.jpg" alt="portfolio-5">
+                                        <h4>Handwritting Recognition System</h4>
+                                        <a href="https://www.linkedin.com/posts/rotimi-awomodu-b0b7b5a1_excited-to-share-my-recent-project-on-activity-7168789483658686464-tjx9?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">Video post link</a>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item end -->
+
+                        <!-- Portfolio item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="./images/portfolio/portfolio-6.jpg" data-lightbox="portfolio" data-title="Project 6">
+                                        <img src="./images/portfolio/portfolio-6.jpg" alt="portfolio-6">
+                                        <h4>Online-Logbook</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="collapsible">Other Projects</button>
+
+                        <!-- Collapsible Content -->
+                        <div class="content">
+                            <div class="gallery-container">
+                                <!-- Certifications 7 to 15 start -->
+                                <a href="./images/certifications/certificate-7.jpg" data-lightbox="certifications" data-title="Certificate 7">
+                                    <img src="./images/certifications/certificate-7.jpg" alt="certificate-7">
+                                </a>
+                                <a href="./images/certifications/certificate-8.jpg" data-lightbox="certifications" data-title="Certificate 8">
+                                    <img src="./images/certifications/certificate-8.jpg" alt="certificate-8">
+                                </a>
+                                <a href="./images/certifications/certificate-9.jpg" data-lightbox="certifications" data-title="Certificate 9">
+                                    <img src="./images/certifications/certificate-9.jpg" alt="certificate-9">
+                                </a>
+                                <a href="./images/certifications/certificate-10.jpg" data-lightbox="certifications" data-title="Certificate 10">
+                                    <img src="./images/certifications/certificate-10.jpg" alt="certificate-10">
+                                </a>
+                                <!-- Certifications 7 to 15 end -->
+                            </div>
+                        </div>
+                        <!-- Portfolio item end -->
+                        <!-- portfolio item end -->
+                    </div>
+
+                    <!-- Certification Heading -->
+                    <div class="row">
+                        <div class="portfolio-heading">
+                            <h2>My Certifications:</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- certification item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="./images/certifications/certificate-1.jpg" data-lightbox="certifications" data-title="Certificate 1">
+                                        <img src="./images/certifications/certificate-1.jpg" alt="certificate-1">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- certification item end -->
+
+                        <!-- certification item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="./images/certifications/certificate-2.jpg" data-lightbox="certifications" data-title="Certificate 2">
+                                        <img src="./images/certifications/certificate-2.jpg" alt="certificate-2">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- certification item end -->
+
+                        <!-- certification item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="./images/certifications/certificate-3.jpg" data-lightbox="certifications" data-title="Certificate 3">
+                                        <img src="./images/certifications/certificate-3.jpg" alt="certificate-3">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- certification item end -->
+
+                        <!-- certification item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="./images/certifications/certificate-4.jpg" data-lightbox="certifications" data-title="Certificate 4">
+                                        <img src="./images/certifications/certificate-4.jpg" alt="certificate-4">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- certification item end -->
+
+                        <!-- certification item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="./images/certifications/certificate-5.jpg" data-lightbox="certifications" data-title="Certificate 5">
+                                        <img src="./images/certifications/certificate-5.jpg" alt="certificate-5">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- certification item end -->
+
+                        <!-- certification item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="./images/certifications/certificate-6.jpg" data-lightbox="certifications" data-title="Certificate 6">
+                                        <img src="./images/certifications/certificate-6.jpg" alt="certificate-6">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- certification item end -->
+
+                        <button class="collapsible">Other Certifications</button>
+
+                        <!-- Collapsible Content -->
+                        <div class="content">
+                            <div class="gallery-container">
+                                <!-- Certifications 7 to 15 start -->
+                                <a href="./images/certifications/certificate-7.jpg" data-lightbox="certifications" data-title="Certificate 7">
+                                    <img src="./images/certifications/certificate-7.jpg" alt="certificate-7">
+                                </a>
+                                <a href="./images/certifications/certificate-8.jpg" data-lightbox="certifications" data-title="Certificate 8">
+                                    <img src="./images/certifications/certificate-8.jpg" alt="certificate-8">
+                                </a>
+                                <a href="./images/certifications/certificate-9.jpg" data-lightbox="certifications" data-title="Certificate 9">
+                                    <img src="./images/certifications/certificate-9.jpg" alt="certificate-9">
+                                </a>
+                                <a href="./images/certifications/certificate-10.jpg" data-lightbox="certifications" data-title="Certificate 10">
+                                    <img src="./images/certifications/certificate-10.jpg" alt="certificate-10">
+                                </a>
+                                <!-- Certifications 7 to 15 end -->
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- PORTFOLIO SECTION END -->
+
+
+            <!-- CONTACT SECTION START -->
+            <section id="contact" class="contact section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+
+                    <h3 class="contact-title padd-15">Please, if you do have any questions ?</h3>
+                    <h4 class="contact-title padd-15">Here where you can contact me:</h4>
+
+                    <div class="row">
+                        <!-- Contact info item start -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call me on</h4>
+                            <p>+234 8117 033 382</p>
+                        </div>
+                        <!-- Contact info item end -->
+                        <!-- Conta ct info item start -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p> rotimiawomodu@gmail.com, rotimi.awomodu1@gmail.com</p>
+                        </div>
+                        <!-- Contact info item end -->
+                        <!-- Contact info item start -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                            <h4>Website</h4>
+                            <p><a href="https://www.linkedin.com/in/rotimi-awomodu-b0b7b5a1/">linkedin.com/in/rotimi-awomodu</a></p>
+                        </div>
+                        <!-- Contact info item end -->
+                        <!-- Contact info item start -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa-brands fa-github"></i></div>
+                            <h4>Website</h4>
+                            <p><a href="https://github.com/Steven-Awo">github.com/Steven-Awo</a></p>
+                        </div>
+                        <!-- Contact info item end -->
+                    </div>
+
+                    <h3 class="contact-title padd-15">Send Me An Email</h3>
+                    <h4 class="contact-title padd-15">Fill in the form below</h4>
+
+                    <!-- Contact form start -->
+                    <div class="row">
+                        <form action="https://formsubmit.co/rotimiawomodu@gmail.com" method="post" class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <button type="submit" class="btn">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Contact form end -->
+                </div>
+            </section>
+            <!-- CONTACT SECTION END -->
+        </div>
+        <!-- MAIN CONTENT END -->
+    </main>
+    <!-- MAIN END -->
+    <!-- STYLE SWITCHER START -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Color</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')" ></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')" ></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')" ></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')" ></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')" ></span>
+            <span class="color-6" onclick="setActiveStyle('color-6')"></span>
+            <span class="color-7" onclick="setActiveStyle('color-7')"></span>
+        </div>
+    </div>
+    <!-- STYLE SWITCHER END -->
+
+    
+    <!-- JavaScript to Handle Collapsible Content -->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    <script src="./js/active-tab.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/style-switcher.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
